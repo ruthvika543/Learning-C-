@@ -2,13 +2,16 @@
 
 int main()
 {
-    char var,vowels;
+    char var;
     scanf("%c",&var);
-    vowels=(a,e,i,o,u);
-    if(var=vowels)
+    if((var>='a'&&var<='z')||(var>='A'&&var<='Z'))
+    {
+    if(var=='a'||var=='e'||var=='i'||var=='o'||var=='u'||var=='A'||var=='E'||var=='I'||var=='O'||var=='U')
     printf("%c is a vowel",var);
     else
     printf("%c is a consonant",var);
+    }
+    else
+    printf("enter a valid charater");
     return 0;
-    
 }
