@@ -15,3 +15,19 @@ int factorial( int num1)
     }
     return answer;
 }
+--------------------------------------
+#include<stdio.h>
+int main()
+{
+    int num,result,i;
+    scanf("%d",&num);
+    i=num-1;
+    result=num;
+ while (i>1)
+{
+     result=result*i;
+     i--;
+}
+ printf("%d", result);
+ return 0;
+}
