@@ -2,25 +2,26 @@
 #include<math.h>
 int main()
 {
-   int num1,num2,sum,sub,mul,div,a;
-   scanf("%d %d %d",&num1,&num2,&a);
+   int num1,num2,answer;
+   char a;
+   scanf("%d %c %d",&num1,&a,&num2);
    switch(a)
    {
-      case 1: sum;
-          sum=num1+num2;
-          printf("%d is the sum of two numbers",sum);
+      case '+':
+          answer=num1+num2;
+          printf("%d is the sum of two numbers",answer);
           break;
-      case 2: sub;
-          sub=num1-num2;
-          printf("%d is the difference of two numbers",sub);
+      case '-':
+          answer=num1-num2;
+          printf("%d is the difference of two numbers",answer);
           break;
-      case 3: mul;
-          mul=num1*num2;
-          printf("%d is the multiplication of two numbers",mul);
+      case '*':
+          answer=num1*num2;
+          printf("%d is the multiplication of two numbers",answer);
           break;
-      case 4: div;
-          div=num1/num2;
-          printf("%d is the division of two numbers",div);
+      case '/':
+          answer=num1/num2;
+          printf("%d is the division of two numbers",answer);
           break;
       default:
           printf("please choose valid operation");
