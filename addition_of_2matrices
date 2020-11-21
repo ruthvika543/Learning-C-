@@ -12,7 +12,7 @@ int main()
     {
         for (b=0; b<j; b++)
         {
-            scanf("%d",&p[i][j]);
+            scanf("%d",&p[a][b]);
         }
     }
 
@@ -22,7 +22,7 @@ int main()
     {
         for (b=0; b<j; b++)
         {
-            scanf("%d",&q[i][j]);
+            scanf("%d",&q[a][b]);
         }
     }
 
@@ -30,8 +30,8 @@ int main()
     {
         for (b=0; b<j; b++)
         {
-          sum[i][j]=p[i][j]+q[i][j];
-          printf("%d\t",&sum[i][j]);
+          sum[a][b]=p[a][b]+q[a][b];
+          printf("%d\t",sum[a][b]);
         }
         printf("\n");
     }
