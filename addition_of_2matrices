@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    int i,j,a,b,sum[5][5];
+    printf("enter the number of rows and columns\n");
+    scanf("%d %d",&i,&j);
+    int p[5][5];
+    printf("enter the elements in the matrix\n");
+    for (a=0; a<i; a++)
+    {
+        for (b=0; b<j; b++)
+        {
+            scanf("%d",&p[i][j]);
+        }
+    }
+
+    int q[5][5];
+    printf("enter the elements in the matrix\n");
+    for (a=0; a<i; a++)
+    {
+        for (b=0; b<j; b++)
+        {
+            scanf("%d",&q[i][j]);
+        }
+    }
+
+    for (a=0; a<i; a++)
+    {
+        for (b=0; b<j; b++)
+        {
+          sum[i][j]=p[i][j]+q[i][j];
+          printf("%d\t",&sum[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
